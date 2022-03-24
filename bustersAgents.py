@@ -500,7 +500,7 @@ class BasicAgentAA(BustersAgent):
         if self.old_line != "":
             self.old_line += str(gameState.getScore()) + ","
             self.old_line += str(self.move) + "\n"
-            with open("test_othermaps_tutorial1.arff", "a") as output_file:
+            with open("training_tutorial1.arff", "a") as output_file:
                 output_file.write(self.old_line)
             self.old_line = linedata
             return "XXXXXXXXXX"
