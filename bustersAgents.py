@@ -197,7 +197,7 @@ class BustersKeyboardAgent(BustersAgent, KeyboardAgent):
         if self.old_lines!="":
             self.old_lines +=str(gameState.getScore())+","
             self.old_lines +=str(KeyboardAgent.getAction(self, gameState)) + "\n"
-            with open("test_othermaps_keyboard.arff", "a") as output_file:
+            with open("training_keyboard.arff", "a") as output_file:
                 output_file.write(self.old_lines)
             self.old_lines = linedata
             return "XXXXXXXXXX"
